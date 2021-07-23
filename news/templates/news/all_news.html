@@ -1,0 +1,6 @@
+{% for news in all_news %}   
+  <a href="{% url 'news' news.id %}"> {{ news.title }}</a> </br>
+  <img src="/media/{{ news.image }}">
+  <h3>{{ news.date }}</h3>
+  <p>{{ news.post }}</p>    
+{% endfor %}

@@ -1,0 +1,7 @@
+    <h3> {{ news.title }}</h3> </br>
+  <img src="/media/{{ news.image }}">
+  <h5>{{ news.date }}</h5>
+  <p>{{ news.post }}</p>
+  {%for event_image in news_images %}
+    <img src="/media/{{ event_image.images }}"></br>
+  {%endfor%}

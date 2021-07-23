@@ -1,0 +1,9 @@
+hi
+
+{% for member in members %}   
+  <a href="{% url 'member' member.id %}"> {{ member.name }} {{ member.lastname }}</a> </br>
+  
+  <img src="/media/{{ member.image }}"></br>
+  {{member.role}}
+  {{ member.biograph }}
+{% endfor %}

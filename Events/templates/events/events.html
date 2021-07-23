@@ -1,0 +1,10 @@
+hi
+
+{% for event in events %}   
+  <a href="{% url 'event' event.id %}"> {{ event.title }} </a> </br>
+  
+ 
+  {{event.post}}
+  
+{% endfor %}
+

@@ -1,0 +1,8 @@
+{{ member.name }}</br>
+{{ member.lastname }}</br>
+<img src="/media/{{ member.image }}"></br>
+{{member.role}}
+{{ member.biograph }}
+{%for image in MemberImages %}
+<img src="/media/{{ image.images }}"></br>
+{%endfor%}

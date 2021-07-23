@@ -1,0 +1,8 @@
+{% for song in all_songs %}   
+  <a href="{% url 'song' song.id %}"> {{ song.song_name }}</a> </br>
+  
+  <img src="/media/{{ song.image }}"></br>
+  <a href="/media/songs/{{ song.song}}">Play</a>
+  {{song.date}}
+ 
+{% endfor %}
