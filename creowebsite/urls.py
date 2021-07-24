@@ -8,6 +8,7 @@ import members.views
 import Events.views
 import OurSongs.views
 import news.views
+import Gallery.views
 
 urlpatterns = [
     path('',home.views.homepage, name='homepage'),
@@ -22,6 +23,8 @@ urlpatterns = [
     #news
     path('news/<str:language>',news.views.all_news,name='all_news'),
     path('news/post/<str:id>',news.views.news,name='news'),
+    #gallery
+    path('gallery/',Gallery.views.gallery,name='gallery'),
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
